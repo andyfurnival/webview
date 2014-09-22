@@ -79,8 +79,8 @@
 {
     [super viewWillAppear:animated];
     
-    NSAssert(self.navigationController, @"BasicWebViewController needs to be contained in a UINavigationController. If you are presenting BasicWebViewController modally, use BasicWebViewModalController instead.");
-    
+//    NSAssert(self.navigationController, @"BasicWebViewController needs to be contained in a UINavigationController. If you are presenting BasicWebViewController modally, use BasicWebViewModalController instead.");
+//    
     [self.view setNeedsUpdateConstraints];
     self.toolbarWasHidden = self.navigationController.isToolbarHidden;
     [self.navigationController setToolbarHidden:NO animated:YES];

@@ -6,9 +6,13 @@
 //  Copyright (c) 2014 Andrew Furnival. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "WHWebViewDelegate.h"
 
-@interface ViewController : UIViewController
+@class WHAppBrowserViewController;
+
+@interface ViewController : UIViewController <UIWebViewDelegate>{
+    WHWebViewDelegate* _webViewDelegate;
+}
 
 
 @end

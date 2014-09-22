@@ -14,8 +14,9 @@
 		DACF110419CE2F1D00A5EB9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DACF110319CE2F1D00A5EB9A /* Images.xcassets */; };
 		DACF110719CE2F1D00A5EB9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DACF110519CE2F1D00A5EB9A /* LaunchScreen.xib */; };
 		DACF111319CE2F1D00A5EB9A /* webviewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DACF111219CE2F1D00A5EB9A /* webviewTests.m */; };
-		DACF111D19CE352000A5EB9A /* BasicWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DACF111C19CE352000A5EB9A /* BasicWebViewController.m */; };
-		DACF112119CE36D400A5EB9A /* BasicWebViewModalController.m in Sources */ = {isa = PBXBuildFile; fileRef = DACF112019CE36D400A5EB9A /* BasicWebViewModalController.m */; };
+		DAF3130419D0BC850085835D /* WHWebViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF3130319D0BC850085835D /* WHWebViewDelegate.m */; };
+		DAF3130719D0BE3E0085835D /* WHAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF3130619D0BE3E0085835D /* WHAppBrowser.m */; };
+		DAF3130919D0C8A00085835D /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAF3130819D0C8A00085835D /* WebKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,10 +43,11 @@
 		DACF110C19CE2F1D00A5EB9A /* webviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = webviewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DACF111119CE2F1D00A5EB9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DACF111219CE2F1D00A5EB9A /* webviewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = webviewTests.m; sourceTree = "<group>"; };
-		DACF111C19CE352000A5EB9A /* BasicWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicWebViewController.m; sourceTree = "<group>"; };
-		DACF111E19CE357100A5EB9A /* BasicWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicWebViewController.h; sourceTree = "<group>"; };
-		DACF111F19CE366600A5EB9A /* BasicWebViewModalController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicWebViewModalController.h; sourceTree = "<group>"; };
-		DACF112019CE36D400A5EB9A /* BasicWebViewModalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicWebViewModalController.m; sourceTree = "<group>"; };
+		DAF3130219D0B6B90085835D /* WHWebViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHWebViewDelegate.h; sourceTree = "<group>"; };
+		DAF3130319D0BC850085835D /* WHWebViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHWebViewDelegate.m; sourceTree = "<group>"; };
+		DAF3130519D0BD280085835D /* WHAppBrowser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHAppBrowser.h; sourceTree = "<group>"; };
+		DAF3130619D0BE3E0085835D /* WHAppBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHAppBrowser.m; sourceTree = "<group>"; };
+		DAF3130819D0C8A00085835D /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAF3130919D0C8A00085835D /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +72,7 @@
 		DACF10EA19CE2F1D00A5EB9A = {
 			isa = PBXGroup;
 			children = (
+				DAF3130819D0C8A00085835D /* WebKit.framework */,
 				DACF10F519CE2F1D00A5EB9A /* webview */,
 				DACF110F19CE2F1D00A5EB9A /* webviewTests */,
 				DACF10F419CE2F1D00A5EB9A /* Products */,
@@ -87,6 +91,10 @@
 		DACF10F519CE2F1D00A5EB9A /* webview */ = {
 			isa = PBXGroup;
 			children = (
+				DAF3130519D0BD280085835D /* WHAppBrowser.h */,
+				DAF3130619D0BE3E0085835D /* WHAppBrowser.m */,
+				DAF3130219D0B6B90085835D /* WHWebViewDelegate.h */,
+				DAF3130319D0BC850085835D /* WHWebViewDelegate.m */,
 				DACF10FA19CE2F1D00A5EB9A /* AppDelegate.h */,
 				DACF10FB19CE2F1D00A5EB9A /* AppDelegate.m */,
 				DACF10FD19CE2F1D00A5EB9A /* ViewController.h */,
@@ -95,10 +103,6 @@
 				DACF110319CE2F1D00A5EB9A /* Images.xcassets */,
 				DACF110519CE2F1D00A5EB9A /* LaunchScreen.xib */,
 				DACF10F619CE2F1D00A5EB9A /* Supporting Files */,
-				DACF111C19CE352000A5EB9A /* BasicWebViewController.m */,
-				DACF111E19CE357100A5EB9A /* BasicWebViewController.h */,
-				DACF111F19CE366600A5EB9A /* BasicWebViewModalController.h */,
-				DACF112019CE36D400A5EB9A /* BasicWebViewModalController.m */,
 			);
 			path = webview;
 			sourceTree = "<group>";
@@ -178,6 +182,7 @@
 				TargetAttributes = {
 					DACF10F219CE2F1D00A5EB9A = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = 3AEM8F28Y7;
 					};
 					DACF110B19CE2F1D00A5EB9A = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -229,11 +234,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DACF111D19CE352000A5EB9A /* BasicWebViewController.m in Sources */,
+				DAF3130719D0BE3E0085835D /* WHAppBrowser.m in Sources */,
 				DACF10FF19CE2F1D00A5EB9A /* ViewController.m in Sources */,
+				DAF3130419D0BC850085835D /* WHWebViewDelegate.m in Sources */,
 				DACF10FC19CE2F1D00A5EB9A /* AppDelegate.m in Sources */,
 				DACF10F919CE2F1D00A5EB9A /* main.m in Sources */,
-				DACF112119CE36D400A5EB9A /* BasicWebViewModalController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,10 +362,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = webview/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -368,10 +377,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = webview/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

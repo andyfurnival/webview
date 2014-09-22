@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>836B4110-16AA-44B9-8831-495ABE6552B2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>webview</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D32EF88BBD7845B3DB933CEFD6C945D362839442</key>
+		<string>https://github.com/andyfurnival/webview.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>webview/webview.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D32EF88BBD7845B3DB933CEFD6C945D362839442</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/andyfurnival/webview.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D32EF88BBD7845B3DB933CEFD6C945D362839442</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D32EF88BBD7845B3DB933CEFD6C945D362839442</string>
+			<key>IDESourceControlWCCName</key>
+			<string>WebView</string>
+		</dict>
+	</array>
+</dict>
+</plist>
